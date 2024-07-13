@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D Animation</title>
+
+<style>
+body {
+	margin: 20% 40%;
+	text-align: center;
+	background: black;
+}
+viewport {
+	perspective: 1000px;
+}
+	#Cube {
+		position: fixed;
+		transform-style: preserve-3d;
+		animation:rotating 3s linear infinite;
+	}
+@keyframes rotating {
+	0% {
+		transform: rotateX(0deg) rotateY(0deg);
+		}
+	
+	100% {
+		transform: rotateX(360deg) rotateY(360deg);
+		}
+}
+#Cube div {
+		height:100px;
+		width:100px;
+		border-radius:100px;
+		position: absolute;
+		border: 1px solid black;
+
+}
+#Front {
+	background: chocolate;
+	transform:translateZ(100px);
+}
+#Back {
+
+	background: red;
+	transform:translateZ(-100px);
+}
+#Top {
+	
+	background: blue;
+	transform:translateY(-100px) rotateX(90deg);
+}
+#Bottom {
+	background: green;
+	transform:translateY(100px) rotateX(90deg);
+}
+#Left {
+	
+	background: orange;
+	transform:translateX(100px) rotateY(90deg);
+}
+#Right {
+	
+	background: yellow;
+	transform:translateX(-100px) rotateY(90deg);
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+<div id="viewport">
+<div id="Cube">
+	<div id="Front">front</div>
+	<div id="Back">back</div>
+	<div id="Top">top</div>
+	<div id="Bottom">bottom</div>
+	<div id="Left">left</div>
+	<div id="Right">right</div>
+
+</div>
+</div>
+</body>
+</html>

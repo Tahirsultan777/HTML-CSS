@@ -1,0 +1,14 @@
+div { border:#0C0 medium; color: #006; font-size:66px; text-align:center;}
+
+
+div+h1 {font-family:Georgia, "Times New Roman", Times, serif; font-weight: 900; font-size:26px; font-style: italic;
+ text-align:center; text-decoration:inherit; color: #000;}
+
+div+h1+p {font-family:"Courier New", Courier, monospace; font-weight: 550; font-size:34px; font-style: inherit; text-align: start;
+text-decoration: blink; color: #00F; line-height:5; }
+
+div~p{font-family:"Courier New", Courier, monospace; font-weight: 400; font-size:50px; font-style: oblique; text-align: right;
+text-decoration: line-through; color: #C06; border:#060 solid; border-top-left-radius:50px;border-top-right-radius:50px;
+ border-bottom-right-radius:20px; border-bottom-left-radius:20px; background-color:#0FF; border-width:20px; font-style:oblique;
+
+}

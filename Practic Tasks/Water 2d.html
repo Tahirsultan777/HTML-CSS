@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+@keyframes water {
+    0%   {background-color: #969; left:0px; top:0px;}
+    20%  {background-color: #c3e8ee; left:700px; top:0px;}
+	35%   {background-color: #F03; left:500px; top:100px;}
+    50%  {background-color: #06F; left:700px; top:350px;}
+    75%  {background-color:green; left:0px; top:350px;}
+    100% {background-color: #666; left:0px; top:0px;}
+}
+
+div {
+
+	height:70px;
+	width:70px;
+     border-radius:1px 100px 100px 100px;
+	 background-color: #c3e8ee;
+	 transform:rotate(45deg);
+	 box-shadow:2px 2px 3px 2px #948e8e;
+	 position: relative;
+	 margin-top:30px;
+	margin-bottom:30px;
+    animation-name: water;
+    animation-duration: 20s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+</style>
+</head>
+
+
+<body>
+<div>water</div>
+<div>fall</div>
+</body>
+</html>
